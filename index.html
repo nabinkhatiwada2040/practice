@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js mini project</title>
+</head>
+<body>
+    <form action="#">
+        <input type="text" name="social" id="social" placeholder="Enter social marks"> <br> <br>
+        <input type="text" name="science" id="science" placeholder="Enter science marks"> <br> <br>
+        <input type="text" name="nepali" id="nepali" placeholder="Enter nepali marks"> <br> <br>
+        <input type="text" name="math" id="math" placeholder="Enter math marks"> <br> <br>
+        <input type="text" name="english" id="english" placeholder="Enter english marks"> <br> <br>
+        <input type="button" value="calculate %" onclick="calcy()" >
+
+        <h1 id="showData"></h1>
+    </form>
+
+
+    <script>
+        const calcy = () =>{
+            let scl =document.getElementById('social').value;
+            let sci =document.getElementById('science').value;
+            let nep =document.getElementById('nepali').value;
+            let math =document.getElementById('math').value;
+            let eng =document.getElementById('english').value;
+            
+            let totalGrads = parseFlot(scl) + parseFloat(sci) + parseFlot(nep) + parseFlot(math) + parseFlot(eng);
+            alert(totalGrads)
+            document.write(totalGrads)
+        }
+
+    </script>
+</body>
+</html>
